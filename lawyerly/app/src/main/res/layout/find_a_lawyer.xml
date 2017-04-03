@@ -22,7 +22,7 @@
             fontPath="fonts/blogger-sans-medium.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lawyerly"
+            android:text="@string/app_name"
             android:textColor="@color/title_grey"
             android:textSize="22sp"/>
 
@@ -32,7 +32,6 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="42dp"
-        android:layout_below="@id/toolbar"
         android:background="@android:color/white"
         android:elevation="2dp"/>
 

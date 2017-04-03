@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/grey_background"
     android:orientation="vertical"
-    tools:ignore="MissingPrefix">
+    tools:ignore="MissingPrefix,RtlHardcoded,ContentDescription">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/lawyer_details_toolbar"
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="Lawyer details"
+            android:text="@string/lawyer_details"
             android:textColor="@color/title_grey"
             android:textSize="18sp"/>
 
@@ -90,7 +90,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:background="@color/white"
-                        android:text="Name"
+                        android:text="@string/name"
                         android:textColor="@color/dark_grey"
                         android:textSize="16sp"/>
 
@@ -100,7 +100,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="4dp"
                         android:background="@color/white"
-                        android:text="Surname"
+                        android:text="@string/surname"
                         android:textColor="@color/dark_grey"
                         android:textSize="16sp"/>
 
@@ -110,7 +110,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:text="Speciality"
+                        android:text="@string/speciality"
                         android:textColor="@color/light_grey"
                         android:textSize="14sp"/>
 
@@ -165,7 +165,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="£"
+                            android:text="@string/gbp_symbol"
                             android:textColor="@color/dark_grey"
                             android:textSize="19sp"/>
 
@@ -174,7 +174,7 @@
                             fontPath="fonts/blogger-sans.ttf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="60.90"
+                            android:text="@string/dummy_currency_value"
                             android:textColor="@color/dark_grey"
                             android:textSize="18sp"/>
 
@@ -182,7 +182,7 @@
                             fontPath="fonts/blogger-sans.ttf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="/h"
+                            android:text="@string/per_hour"
                             android:textColor="@color/dark_grey"
                             android:textSize="11sp"/>
 
@@ -214,7 +214,7 @@
             android:layout_alignTop="@id/card_view"
             android:layout_marginRight="30dp"
             android:layout_marginTop="6dp"
-            android:text="Verified Background"
+            android:text="@string/verified_background"
             android:textSize="11sp"
             android:translationZ="3dp"/>
 
@@ -240,7 +240,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginBottom="-2dp"
-            android:text="1st FREE CONSULTATION Available"
+            android:text="@string/_1st_free_consultation_available"
             android:textSize="10sp"/>
 
     </FrameLayout>
@@ -289,7 +289,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="6dp"
-                            android:text="4.8"
+                            android:text="@string/example_rating_value"
                             android:textSize="20sp"/>
 
                         <ImageView
@@ -303,7 +303,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Rating"/>
+                        android:text="@string/rating"/>
 
                 </LinearLayout>
 
@@ -330,7 +330,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="6dp"
-                            android:text="12"
+                            android:text="@string/example_number_of_reviews"
 
                             android:textSize="20sp"/>
 
@@ -350,7 +350,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Reviews"/>
+                            android:text="@string/reviews"/>
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -388,7 +388,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="6dp"
-                            android:text="1/18"
+                            android:text="@string/example_ranking_value"
                             android:textSize="20sp"/>
 
                         <ImageView
@@ -402,7 +402,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Ranking"/>
+                        android:text="@string/ranking"/>
 
                 </LinearLayout>
 
@@ -425,7 +425,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Member Since: Oct 2015"
+                    android:text="@string/example_member_since_value"
                     android:textColor="@color/light_grey"
                     android:textSize="11sp"/>
 
@@ -439,7 +439,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Avg. Response Time: 1 day"
+                    android:text="@string/example_response_time"
                     android:textColor="@color/light_grey"
                     android:textSize="11sp"/>
 
@@ -464,7 +464,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:text="Description"/>
+                android:text="@string/description"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -472,7 +472,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."/>
+                android:text="@string/description_1"/>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -487,7 +487,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:text="Another Info"/>
+                android:text="@string/another_info"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -495,7 +495,7 @@
                 android:layout_marginBottom="24dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "/>
+                android:text="@string/description_2"/>
 
         </LinearLayout>
 
@@ -528,7 +528,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:gravity="center"
-                android:text="SCHEDULE LAWYER"
+                android:text="@string/schedule_lawyer"
                 android:textColor="@color/white"
                 android:textSize="18sp"/>
 

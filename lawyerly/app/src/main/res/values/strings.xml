@@ -2,4 +2,26 @@
     <string name="app_name">Lawyerly</string>
     <string name="toolbar_favorite">sort</string>
     <string name="toolbar_filter">filters</string>
+    <string name="lawyer_details">Lawyer details</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="speciality">Speciality</string>
+    <string name="gbp_symbol">£</string>
+    <string name="dummy_currency_value">60.90</string>
+    <string name="per_hour">/h</string>
+    <string name="verified_background">Verified Background</string>
+    <string name="_1st_free_consultation_available">1st FREE CONSULTATION Available</string>
+    <string name="example_rating_value">4.8</string>
+    <string name="rating">Rating</string>
+    <string name="example_number_of_reviews">12</string>
+    <string name="reviews">Reviews</string>
+    <string name="example_ranking_value">1/18</string>
+    <string name="ranking">Ranking</string>
+    <string name="example_member_since_value">Member Since: Oct 2015</string>
+    <string name="example_response_time">Avg. Response Time: 1 day</string>
+    <string name="description">Description</string>
+    <string name="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</string>
+    <string name="another_info">Another Info</string>
+    <string name="description_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="schedule_lawyer">SCHEDULE LAWYER</string>
 </resources>
