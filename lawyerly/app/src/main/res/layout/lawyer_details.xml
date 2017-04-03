@@ -164,7 +164,6 @@
                             fontPath="fonts/blogger-sans.ttf"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
                             android:text="@string/gbp_symbol"
                             android:textColor="@color/dark_grey"
                             android:textSize="19sp"/>
@@ -492,7 +491,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
+                android:layout_marginBottom="32dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:text="@string/description_2"/>
@@ -505,7 +504,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="-17.5dp"
-
         android:translationZ="5dp">
 
         <ImageView

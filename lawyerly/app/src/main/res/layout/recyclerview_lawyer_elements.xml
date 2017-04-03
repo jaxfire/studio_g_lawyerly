@@ -116,7 +116,6 @@
                         fontPath="fonts/blogger-sans.ttf"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
                         android:text="£"
                         android:textColor="@color/dark_grey"
                         android:textSize="19sp"/>
