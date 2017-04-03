@@ -3,7 +3,6 @@ package com.jaxfire.lawyerly;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,10 +71,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public RecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
 
+        //If the element is the first in the list then load the image layout instead
         if (viewType == 0){
-            view = LayoutInflater.from(context).inflate(R.layout.header, parent, false);
+            view = LayoutInflater.from(context).inflate(R.layout.outline_illustration, parent, false);
         } else {
-            view = LayoutInflater.from(context).inflate(R.layout.recyclerview_items, parent, false);
+            view = LayoutInflater.from(context).inflate(R.layout.recyclerview_lawyer_elements, parent, false);
         }
 
         viewHolder = new ViewHolder(view);

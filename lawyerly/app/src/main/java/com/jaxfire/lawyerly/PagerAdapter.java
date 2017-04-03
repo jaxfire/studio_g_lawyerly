@@ -1,11 +1,9 @@
 package com.jaxfire.lawyerly;
 
-
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.util.Log;
 
 import java.util.ArrayList;
 
@@ -14,13 +12,11 @@ public class PagerAdapter extends FragmentPagerAdapter {
     private static final int NUM_PAGES = 3;
     ArrayList<Lawyer> lawyers;
     ScreenSlidePageFragment[] fragments;
-    MainActivity mainActivity;
 
-    public PagerAdapter(FragmentManager fm, MainActivity mainActivity) {
+    public PagerAdapter(FragmentManager fm, Context context) {
         super(fm);
-        lawyers = Lawyer.generateTemplateLayers(mainActivity, 18);
+        lawyers = Lawyer.generateDummyLawyers(context, 18);
         fragments = new ScreenSlidePageFragment[NUM_PAGES];
-        this.mainActivity = mainActivity;
     }
 
     @Override
@@ -47,7 +43,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
 
         if (fragments[position] == null){
-            fragments[position] = ScreenSlidePageFragment.newInstance(position, lawyers, mainActivity);
+            fragments[position] = ScreenSlidePageFragment.newInstance(position, lawyers);
         }
 
         return fragments[position];

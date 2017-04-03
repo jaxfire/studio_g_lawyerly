@@ -2,9 +2,9 @@
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="MissingPrefix">
 
     <android.support.v7.widget.CardView
@@ -13,9 +13,10 @@
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
         android:elevation="2dp"
         card_view:cardCornerRadius="4dp">
 
@@ -26,14 +27,14 @@
 
             <com.makeramen.roundedimageview.RoundedImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_height="match_parent"
-                android:layout_width="wrap_content"
                 android:id="@+id/profile_image"
-                android:src="@drawable/profile_14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
                 android:scaleType="centerCrop"
-                app:riv_corner_radius_top_left="4dp"
+                android:src="@drawable/profile_14"
                 app:riv_corner_radius_bottom_left="4dp"
-                android:layout_marginRight="16dp"/>
+                app:riv_corner_radius_top_left="4dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -42,25 +43,25 @@
 
                 <TextView
                     android:id="@+id/name"
+                    fontPath="fonts/blogger-sans.ttf"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
                     android:background="@color/white"
                     android:text="temp"
                     android:textColor="@color/dark_grey"
-                    android:textSize="16sp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginTop="16dp"
-                    fontPath="fonts/blogger-sans.ttf"/>
+                    android:textSize="16sp"/>
 
                 <TextView
                     android:id="@+id/speciality"
+                    fontPath="fonts/blogger-sans-light.ttf"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:text="temp"
                     android:textColor="@color/light_grey"
-                    android:textSize="14sp"
-                    fontPath="fonts/blogger-sans-light.ttf"/>
+                    android:textSize="14sp"/>
 
             </LinearLayout>
 
@@ -72,37 +73,37 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:layout_marginRight="12dp"
-                android:layout_marginTop="3dp">
+                android:layout_marginTop="3dp"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_gravity="right"
                     android:layout_marginBottom="12dp"
+                    android:layout_marginRight="-4dp"
                     android:layout_marginTop="6dp"
-                    android:layout_marginRight="-4dp">
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/rating"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
                         android:background="@color/white"
                         android:text="temp"
                         android:textColor="@color/dark_grey"
-                        android:textSize="14sp"
-                        android:layout_gravity="bottom"/>
+                        android:textSize="14sp"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rating"
                         android:layout_gravity="bottom"
+                        android:layout_marginBottom="-2dp"
                         android:scaleX="0.6"
                         android:scaleY="0.6"
-                        android:layout_marginBottom="-2dp"/>
+                        android:src="@drawable/rating"/>
 
                 </LinearLayout>
 
@@ -112,30 +113,30 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        fontPath="fonts/blogger-sans.ttf"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
                         android:text="£"
                         android:textColor="@color/dark_grey"
-                        android:textSize="19sp"
-                        fontPath="fonts/blogger-sans.ttf"
-                        android:layout_marginTop="3dp"/>
+                        android:textSize="19sp"/>
 
                     <TextView
                         android:id="@+id/cost"
+                        fontPath="fonts/blogger-sans.ttf"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="temp"
                         android:textColor="@color/dark_grey"
-                        android:textSize="18sp"
-                        fontPath="fonts/blogger-sans.ttf"/>
+                        android:textSize="18sp"/>
 
                     <TextView
+                        fontPath="fonts/blogger-sans.ttf"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="/h"
                         android:textColor="@color/dark_grey"
-                        android:textSize="11sp"
-                        fontPath="fonts/blogger-sans.ttf"/>
+                        android:textSize="11sp"/>
 
                 </LinearLayout>
 
@@ -144,10 +145,10 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/lawyer_arrow"
                 android:layout_marginRight="10dp"
                 android:scaleX="0.6"
-                android:scaleY="0.6"/>
+                android:scaleY="0.6"
+                android:src="@drawable/lawyer_arrow"/>
 
         </LinearLayout>
 
@@ -157,12 +158,12 @@
         android:id="@+id/verified_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/verified_icon"
-        android:layout_gravity="right|top"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@id/card_view"
-        android:layout_marginTop="-4dp"
+        android:layout_gravity="right|top"
         android:layout_marginRight="12dp"
+        android:layout_marginTop="-4dp"
+        android:src="@drawable/verified_icon"
         android:translationZ="3dp"
         android:visibility="invisible"/>
 

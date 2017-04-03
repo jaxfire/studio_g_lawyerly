@@ -12,37 +12,45 @@ import java.util.ArrayList;
 
 public class ScreenSlidePageFragment extends Fragment {
 
-    private RecyclerView recyclerView;
-    private RecyclerView.Adapter recyclerViewAdapter;
-    private LinearLayoutManager linearLayoutManager;
     private ArrayList<Lawyer> lawyers;
-    MainActivity mainActivity;
 
-    public static ScreenSlidePageFragment newInstance(int position, ArrayList<Lawyer> lawyers, MainActivity mainActivity) {
+    public static ScreenSlidePageFragment newInstance(int position, ArrayList<Lawyer> lawyers) {
 
         ScreenSlidePageFragment fragment = new ScreenSlidePageFragment();
-
         ArrayList<Lawyer> lawyerSubset = new ArrayList<>();
 
+        /* For this concept app only. Create different subsets of the main lawyer list depending on
+           which ViewPager screen is required... FEATURED, ALL or FAVS */
         if (position == 0){
+
             for (Lawyer lawyer : lawyers) {
+
                 if (lawyer.getFeatured()){
                     lawyerSubset.add(lawyer);
                 }
+
             }
+
         } else if (position == 1){
+
             lawyerSubset = lawyers;
+
         } else {
+
             for (Lawyer lawyer : lawyers) {
+
                 if (lawyer.getFavourite()){
                     lawyerSubset.add(lawyer);
                 }
+
             }
+
         }
 
-        lawyerSubset.add(0, lawyers.get(lawyers.size() - 1)); //Add a dummy element to the first position
+        //Add a dummy element to the first position. This will be replaced by the outline illustration.
+        lawyerSubset.add(0, lawyers.get(lawyers.size() - 1));
+
         fragment.lawyers = lawyerSubset;
-        fragment.mainActivity = mainActivity;
 
         return fragment;
     }
@@ -50,17 +58,18 @@ public class ScreenSlidePageFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_screen_slide_page, container, false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_with_recyclerview, container, false);
 
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerview);
+        RecyclerView recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerview);
 
-        linearLayoutManager = new LinearLayoutManager(getContext());
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
 
-        recyclerViewAdapter = new RecyclerViewAdapter(getContext(), lawyers);
+        RecyclerView.Adapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), lawyers);
         recyclerView.setAdapter(recyclerViewAdapter);
 
+        // Create the parallax effect on the outline illustration
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
@@ -68,7 +77,7 @@ public class ScreenSlidePageFragment extends Fragment {
 
                 View view = recyclerView.getChildAt(0);
                 if(view != null && recyclerView.getChildAdapterPosition(view) == 0)  {
-                    view.setTranslationY(-view.getTop() / 2);
+                    view.setTranslationY(-view.getTop() / 3);
                 }
             }
         });
