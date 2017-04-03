@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selected"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/gradient_1" android:duration="100" />
+    <item android:drawable="@drawable/gradient_2" android:duration="100" />
+    <item android:drawable="@drawable/gradient_3" android:duration="100" />
+    <item android:drawable="@drawable/gradient_4" android:duration="100" />
+    <item android:drawable="@drawable/gradient_5" android:duration="100" />
+    <item android:drawable="@drawable/gradient_6" android:duration="100" />
+    <item android:drawable="@drawable/gradient_7" android:duration="100" />
+    <item android:drawable="@drawable/gradient_8" android:duration="100" />
+    <item android:drawable="@drawable/gradient_9" android:duration="100" />
+    <item android:drawable="@drawable/gradient_10" android:duration="100" />
+    <item android:drawable="@drawable/gradient_11" android:duration="100" />
+    <item android:drawable="@drawable/gradient_12" android:duration="100" />
+    <item android:drawable="@drawable/gradient_13" android:duration="100" />
+    <item android:drawable="@drawable/gradient_14" android:duration="100" />
+    <item android:drawable="@drawable/gradient_15" android:duration="100" />
+    <item android:drawable="@drawable/gradient_16" android:duration="100" />
+    <item android:drawable="@drawable/gradient_17" android:duration="100" />
+    <item android:drawable="@drawable/gradient_18" android:duration="100" />
+    <item android:drawable="@drawable/gradient_19" android:duration="100" />
+    <item android:drawable="@drawable/gradient_20" android:duration="100" />
+    <item android:drawable="@drawable/gradient_21" android:duration="100" />
+    <item android:drawable="@drawable/gradient_22" android:duration="100" />
+    <item android:drawable="@drawable/gradient_23" android:duration="100" />
+    <item android:drawable="@drawable/gradient_24" android:duration="100" />
+    <item android:drawable="@drawable/gradient_25" android:duration="100" />
+    <item android:drawable="@drawable/gradient_26" android:duration="100" />
+    <item android:drawable="@drawable/gradient_27" android:duration="100" />
+    <item android:drawable="@drawable/gradient_28" android:duration="100" />
+
+</animation-list>

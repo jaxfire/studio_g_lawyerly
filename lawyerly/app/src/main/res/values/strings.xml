@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lawyerly</string>
+    <string name="toolbar_favorite">sort</string>
+    <string name="toolbar_filter">filters</string>
+</resources>

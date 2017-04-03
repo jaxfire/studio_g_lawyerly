@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="2dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/profile_image"
+                android:src="@drawable/profile_14"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius_top_left="4dp"
+                app:riv_corner_radius_bottom_left="4dp"
+                android:layout_marginRight="16dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="temp"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    fontPath="fonts/blogger-sans.ttf"/>
+
+                <TextView
+                    android:id="@+id/speciality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="temp"
+                    android:textColor="@color/light_grey"
+                    android:textSize="14sp"
+                    fontPath="fonts/blogger-sans-light.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="-4dp">
+
+                    <TextView
+                        android:id="@+id/rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="temp"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="14sp"
+                        android:layout_gravity="bottom"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rating"
+                        android:layout_gravity="bottom"
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        android:layout_marginBottom="-2dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="£"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="19sp"
+                        fontPath="fonts/blogger-sans.ttf"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="temp"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="18sp"
+                        fontPath="fonts/blogger-sans.ttf"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/h"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="11sp"
+                        fontPath="fonts/blogger-sans.ttf"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/lawyer_arrow"
+                android:layout_marginRight="10dp"
+                android:scaleX="0.6"
+                android:scaleY="0.6"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/verified_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/verified_icon"
+        android:layout_gravity="right|top"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/card_view"
+        android:layout_marginTop="-4dp"
+        android:layout_marginRight="12dp"
+        android:translationZ="3dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
+
